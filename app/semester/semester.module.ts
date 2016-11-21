@@ -5,12 +5,12 @@
 
 import {NgModule} from "@angular/core";
 import {semesterComponent} from "./semester-component";
-import {subjectComponent} from "./subject-component";
 import {BrowserModule} from "@angular/platform-browser";
+
 
 @NgModule({
     imports: [BrowserModule],
-    declarations: [semesterComponent, subjectComponent],
+    declarations: [semesterComponent],
     exports: [semesterComponent]
 
 })

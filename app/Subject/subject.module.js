@@ -1,5 +1,5 @@
 /**
- * Created by Tal on 12/11/16.
+ * Created by Tal on 20/11/16.
  */
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -12,20 +12,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var semester_component_1 = require("./semester-component");
-var platform_browser_1 = require("@angular/platform-browser");
-var semesterModule = (function () {
-    function semesterModule() {
+var subjects_provider_1 = require("./subjects-provider");
+var subjectsModule = (function () {
+    function subjectsModule() {
     }
-    semesterModule = __decorate([
+    subjectsModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [semester_component_1.semesterComponent],
-            exports: [semester_component_1.semesterComponent]
+            providers: [subjects_provider_1.subjectsProvider],
+            exports: [subjects_provider_1.subjectsProvider]
         }), 
         __metadata('design:paramtypes', [])
-    ], semesterModule);
-    return semesterModule;
+    ], subjectsModule);
+    return subjectsModule;
 }());
-exports.semesterModule = semesterModule;
-//# sourceMappingURL=semester.module.js.map
+exports.subjectsModule = subjectsModule;
+//# sourceMappingURL=subject.module.js.map

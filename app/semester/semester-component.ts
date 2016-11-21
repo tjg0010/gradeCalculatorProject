@@ -1,7 +1,6 @@
 /* Created by Tal on 12/11/16. */
 
 import {Component} from "@angular/core";
-import {and} from "@angular/router/src/utils/collection";
 
 @Component({
     selector: 'semester-component',
